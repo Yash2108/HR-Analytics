@@ -21,7 +21,7 @@ The dataset for this project is taken from [Kaggle](https://www.kaggle.com/datas
 - 14 features
 - Binary targets (whether or not the candidate is willing to switch jobs)
 
-Download the code from Kaggle and save the `aug_test.csv` and `aug_train.csv` files in the `data` folder.
+Download the code from Kaggle and put the `aug_train.csv` file in the `data` folder.
 
 
 <details>
