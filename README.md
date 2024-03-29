@@ -13,16 +13,11 @@ We apply the following algorithms to make this classification:
 7. Light GBM
 8. Artificial Neural Network
 
-The [Jupyter Notebook](<CS 513 Group 2.ipynb>) has the full implementation code.
-
 # :package: Dataset
 The dataset for this project is taken from [Kaggle](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists/data). Some details about the dataset:
 - 19K rows
 - 14 features
 - Binary targets (whether or not the candidate is willing to switch jobs)
-
-Download the code from Kaggle and put the `aug_train.csv` file in the `data` folder.
-
 
 <details>
   <summary><b>More information about the dataset</b></summary>
@@ -47,14 +42,31 @@ Download the code from Kaggle and put the `aug_train.csv` file in the `data` fol
 
 </details>
 
+
+# :gear: Setup
+
+1. Download the code from Kaggle and put the `aug_train.csv` file in the `data` folder.
+2. Execute the `preprocess.ipynb` notebook.
+3. Execute the `model_implementation.ipynb` notebook.
+4. EDA has been performed in `EDA.ipynb` notebook.
+
 # :bar_chart: Results
 
 Comparing the accuracy of the models we implemented:
 
-![alt text](imgs/result.jpg)
+![accuracy comparison of models](imgs/accuracy_comparison.png)
+
+
+Comparing the F1 Score of the models we implemented:
+
+![f1 score comparison of models](imgs/f1_comparison.png)
 
 # :warning: Requirements
-
-- bifurcate code
-- tell user to download data
-- 
+- pandas==2.2.1
+- seaborn==0.13.2
+- scikit-learn==1.4.1.post1
+- xgboost==2.0.3
+- lightgbm==4.3.0
+- tensorflow==2.16.1
+- imblearn==0.0
+- matplotlib==3.8.3
